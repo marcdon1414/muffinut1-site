@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Muffinut | Innovative Taste, Zero Waste</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="#home">
+        <img src="PRODUCT/LOGO.png" alt="Muffinut Logo" class="brand-logo">
+        <span class="brand-text">Muffinut</span>
+      </a>
+      <nav class="main-nav">
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#feedback">Feedback</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="#find-us">Find Us</a>
+      </nav>
+      <button class="cart-button" id="cartButton" aria-label="View Cart">
+        🛒<span id="cartCount">0</span>
+      </button>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+      <div class="hero-copy">
+        <span class="eyebrow">Made with natural ingredients</span>
+        <h1>Nature's Finest, Crafted For You</h1>
+        <p>Handcrafted treats made from nature's finest ingredients, designed to delight your senses with every bite.</p>
+        <a class="hero-cta" href="#menu">Order Now</a>
+      </div>
+    </section>
+
+      <section class="menu-section" id="menu">
+        <div class="section-header">
+          <span>Menu</span>
+          <h2>Browse fresh bakes, iced mylk, Mylk and Muff combos, and bundle boxes.</h2>
+        </div>
+        <div class="menu-body">
+          <aside class="menu-aside">
+            <div class="panel card categories">
+              <p class="panel-label">Categories</p>
+              <ul>
+                <li class="active" data-category="all">All</li>
+                <li data-category="muffins">Muffins</li>
+                <li data-category="drinks">Mylk Drinks</li>
+                <li data-category="mix-match">Mylk and Muff</li>
+                <li data-category="bundles">Bundles</li>
+              </ul>
+            </div>
+            <div class="panel card filter">
+              <p class="panel-label">Filter by Price</p>
+              <div class="price-range">
+                <span id="minPrice">₱55</span>
+                <span id="maxPrice">&#8369;585</span>
+              </div>
+              <input type="range" min="55" max="585" value="585" />
+            </div>
+            <div class="panel card offer-highlight">
+              <p class="panel-label">Popular Choice</p>
+              <img src="PRODUCT/Ivory Coco Muffin (Original).jpg" alt="Ivory Coco Muffin" class="offer-image">
+              <h3>Ivory Coco Muffin</h3>
+              <p>Melt-in-your-mouth coconut muffin with rich, sweet glaze.</p>
+              <span class="offer-price">₱75</span>
+            </div>
+          </aside>
+
+          <div class="menu-catalog">
+            <section class="menu-group" data-menu-group="muffins">
+              <div class="menu-group-header">
+                <div>
+                  <span class="menu-group-kicker">Fresh Bakes</span>
+                  <h3>Coco Muffins</h3>
+                </div>
+                <p>Classic and premium coconut muffins, baked for soft centers and rich toppings.</p>
+              </div>
+              <div class="product-grid">
+            <!-- Coconut Muffins -->
+            <article class="product-card muffin-card" data-name="Ivory Coco Muffin (Original)" data-price="₱75" data-desc="A melt-in-your-mouth coconut muffin, made even better with a rich, sweet glaze that perfectly balances its sweetness." data-category="muffins">
+              <img src="PRODUCT/Ivory Coco Muffin (Original).jpg" alt="Ivory Coco Muffin" class="product-image">
+              <div class="product-copy">
+                <h3>Ivory Coco Muffin</h3>
+                <p>Original with sweet glaze</p>
+                <span>₱75</span>
+              </div>
+            </article>
+            <article class="product-card muffin-card" data-name="Midnight Coco Muffin (Chocolate)" data-price="₱59" data-desc="A chocolatey-flavored muffin with a creamy taste of coconut cream filling and an appealing topping of chocolate chips." data-category="muffins">
+              <img src="PRODUCT/Midnight Coco Muffin (Chocolate).jpg" alt="Midnight Coco Muffin" class="product-image">
+              <div class="product-copy">
+                <h3>Midnight Coco Muffin</h3>
+                <p>Chocolate + coconut cream</p>
+                <span>₱59</span>
+              </div>
+            </article>
+            <article class="product-card muffin-card" data-name="Golden Ember Coco Muffin (Cheesy Bacon)" data-price="₱75" data-desc="A delightful coconut muffin with a perfect combination of sweet and salty ingredients, stuffed with the crispy texture of bacon and creamy melted cheese." data-category="muffins">
+              <img src="PRODUCT/Golden Ember Coco Muffin (Cheesy Bacon).jpg" alt="Golden Ember Coco Muffin" class="product-image">
+              <div class="product-copy">
+                <h3>Golden Ember Coco Muffin</h3>
+                <p>Cheesy Bacon</p>
+                <span>₱75</span>
+              </div>
+            </article>
+            <article class="product-card muffin-card" data-name="Sunlit Cradle Coco Muffin (Cheese)" data-price="₱75" data-desc="A soft coconut-based muffin with warm, delicious cheese fillings and a golden finish that gives a cozy feeling." data-category="muffins">
+              <img src="PRODUCT/Sunlit Cradle Coco Muffin (Cheese).jpg" alt="Sunlit Cradle Coco Muffin" class="product-image">
+              <div class="product-copy">
+                <h3>Sunlit Cradle Coco Muffin</h3>
+                <p>Cheese</p>
+                <span>₱75</span>
+              </div>
+            </article>
+            <article class="product-card muffin-card" data-name="Lavender Coco Muffin (Ube)" data-price="₱59" data-desc="A vibrant, appealing, outstanding purple dessert that filled every bite with a combination of the natural sweetness of ube and a smooth coconut coating." data-category="muffins">
+              <img src="PRODUCT/Lavender Coco Muffin (Ube).jpg" alt="Lavender Coco Muffin" class="product-image">
+              <div class="product-copy">
+                <h3>Lavender Coco Muffin</h3>
+                <p>Ube</p>
+                <span>₱59</span>
+              </div>
+            </article>
+            
+              </div>
+            </section>
+
+            <section class="menu-group" data-menu-group="drinks">
+              <div class="menu-group-header">
+                <div>
+                  <span class="menu-group-kicker">Iced Mylk</span>
+                  <h3>Sweet Potato Drinks</h3>
+                </div>
+                <p>Roasted sweet potato mylk in original, chocolate, and matcha blends.</p>
+              </div>
+              <div class="product-grid">
+            <!-- Sweet Potato Milk Drinks -->
+            <article class="product-card drink-card" data-name="Midas Mylk (Original)" data-price="₱55" data-desc="Comforting flavour of slow-roasted sweet potato, blended into a naturally sweet dairy-free drink. Pure plant-based creaminess." data-category="drinks">
+              <img src="PRODUCT/ORIGINAL.jpg" alt="Midas Mylk Original" class="product-image">
+              <div class="product-copy">
+                <h3>Midas Mylk</h3>
+                <p>Original Sweet Potato</p>
+                <span>₱55</span>
+              </div>
+            </article>
+            <article class="product-card drink-card" data-name="Ebon Bliss (Chocolate Sweet-Potato Milk)" data-price="₱59" data-desc="Produced from nutrient-rich roasted sweet potatoes, this creamy and smooth dairy-free milk is combined with excellent dark chocolate to create a classy and guilt-free taste." data-category="drinks">
+              <img src="PRODUCT/CHOCO.jpg" alt="Ebon Bliss Chocolate" class="product-image">
+              <div class="product-copy">
+                <h3>Ebon Bliss</h3>
+                <p>Chocolate Sweet Potato</p>
+                <span>₱59</span>
+              </div>
+            </article>
+            <article class="product-card drink-card" data-name="Zen Matcha (Matcha Sweet-Potato Milk)" data-price="₱75" data-desc="A plant-based milk made with slow-roasted sweet potatoes pairs perfectly with a matcha, providing a balanced taste of sweetness, creaminess, and tea flavor." data-category="drinks">
+              <img src="PRODUCT/MATCHA.jpg" alt="Zen Matcha Matcha" class="product-image">
+              <div class="product-copy">
+                <h3>Zen Matcha</h3>
+                <p>Matcha Sweet Potato</p>
+                <span>₱75</span>
+              </div>
+            </article>
+
+              </div>
+            </section>
+
+            <section class="menu-group" data-menu-group="mix-match">
+              <div class="menu-group-header">
+                <div>
+                  <span class="menu-group-kicker">Milk + Muffin Combos</span>
+                  <h3>Mylk and Muff</h3>
+                </div>
+                <p>Choose a sweet potato mylk and pair it with a classic or premium muffin.</p>
+              </div>
+              <div class="product-grid">
+            <!-- Milk + Muffin Bundles -->
+            <article class="product-card mix-match-card" data-name="Midas Mylk + Classic Muffin" data-price="₱109" data-desc="A milk + muffin combo with one classic muffin of your choice." data-category="mix-match">
+              <img src="PRODUCT/Mix_In_Match/Midas Mylk +1 Muffin_classic.jpeg" alt="Midas Mylk with classic muffin choices" class="product-image">
+              <div class="product-copy">
+                <h3>Midas Mylk + Muffin</h3>
+                <p>Classic Muffin Choice</p>
+                <span>₱109</span>
+              </div>
+            </article>
+            <article class="product-card mix-match-card" data-name="Elbon Bliss Milk + Classic Muffin" data-price="₱115" data-desc="A milk + muffin combo with one classic muffin of your choice." data-category="mix-match">
+              <img src="PRODUCT/Mix_In_Match/Ebon bliss +1 Muffin_Classic.jpeg" alt="Elbon Bliss with classic muffin choices" class="product-image">
+              <div class="product-copy">
+                <h3>Elbon Bliss Milk + Muffin</h3>
+                <p>Classic Muffin Choice</p>
+                <span>₱115</span>
+              </div>
+            </article>
+            <article class="product-card mix-match-card" data-name="Zen Matcha Milk + Classic Muffin" data-price="₱125" data-desc="A milk + muffin combo with one classic muffin of your choice." data-category="mix-match">
+              <img src="PRODUCT/Mix_In_Match/Zen match + 1 muffin_classic.jpeg" alt="Zen Matcha with classic muffin choices" class="product-image">
+              <div class="product-copy">
+                <h3>Zen Matcha Milk + Muffin</h3>
+                <p>Classic Muffin Choice</p>
+                <span>₱125</span>
+              </div>
+            </article>
+            <article class="product-card mix-match-card premium-card" data-name="Midas Mylk + Premium Muffin" data-price="₱119" data-desc="A milk + muffin combo with one premium muffin of your choice." data-category="mix-match">
+              <img src="PRODUCT/Mix_In_Match/Midas Mylk +1 muffin_premium.jpeg" alt="Midas Mylk with premium muffin choices" class="product-image">
+              <div class="product-copy">
+                <h3>Midas Mylk + Muffin</h3>
+                <p>Premium Muffin Choice</p>
+                <span>₱119</span>
+              </div>
+            </article>
+            <article class="product-card mix-match-card premium-card" data-name="Elbon Bliss Milk + Premium Muffin" data-price="₱125" data-desc="A milk + muffin combo with one premium muffin of your choice." data-category="mix-match">
+              <img src="PRODUCT/Mix_In_Match/Ebon bliss + 1 Muffin_Premium.jpeg" alt="Elbon Bliss with premium muffin choices" class="product-image">
+              <div class="product-copy">
+                <h3>Elbon Bliss Milk + Muffin</h3>
+                <p>Premium Muffin Choice</p>
+                <span>₱125</span>
+              </div>
+            </article>
+            <article class="product-card mix-match-card premium-card" data-name="Zen Matcha Milk + Premium Muffin" data-price="₱139" data-desc="A milk + muffin combo with one premium muffin of your choice." data-category="mix-match">
+              <img src="PRODUCT/Mix_In_Match/Zen Matcha +1 Muffin_Premium.jpeg" alt="Zen Matcha with premium muffin choices" class="product-image">
+              <div class="product-copy">
+                <h3>Zen Matcha Milk + Muffin</h3>
+                <p>Premium Muffin Choice</p>
+                <span>₱139</span>
+              </div>
+            </article>
+
+              </div>
+            </section>
+
+            <section class="menu-group bundle-menu-group" data-menu-group="bundles">
+              <div class="menu-group-header">
+                <div>
+                  <span class="menu-group-kicker">Box Combos</span>
+                  <h3>Mylk + Muffin Boxes</h3>
+                </div>
+                <p>Build boxes with exact muffin and mylk choices when you open a bundle.</p>
+              </div>
+              <div class="product-grid">
+            <!-- Box Bundles -->
+            <article class="product-card bundle-card" data-name="Box of 2 with Mylk" data-price="₱187" data-desc="Includes 1 premium muffin, 1 classic muffin, and 1 any flavor of mylk." data-category="bundles" data-bundle="true" data-premium-count="1" data-classic-count="1" data-mylk-count="1">
+              <div class="product-copy">
+                <h3>Box of 2</h3>
+                <p>Inclusions per box:</p>
+                <ul class="bundle-inclusions">
+                  <li>1 Premium Muffin</li>
+                  <li>1 Classic Muffin</li>
+                  <li>1 Any flavor of Mylk</li>
+                </ul>
+                <span>₱187</span>
+              </div>
+            </article>
+            <article class="product-card bundle-card" data-name="Box of 4 with Mylk" data-price="₱369" data-desc="Includes 2 premium muffins, 2 classic muffins, and 2 any flavor of mylk." data-category="bundles" data-bundle="true" data-premium-count="2" data-classic-count="2" data-mylk-count="2">
+              <div class="product-copy">
+                <h3>Box of 4</h3>
+                <p>Inclusions per box:</p>
+                <ul class="bundle-inclusions">
+                  <li>2 Premium Muffins</li>
+                  <li>2 Classic Muffins</li>
+                  <li>2 Any flavor of Mylk</li>
+                </ul>
+                <span>₱369</span>
+              </div>
+            </article>
+            <article class="product-card bundle-card" data-name="Box of 6 with Mylk" data-price="₱549" data-desc="Includes 3 premium muffins, 3 classic muffins, and 3 any flavor of mylk." data-category="bundles" data-bundle="true" data-premium-count="3" data-classic-count="3" data-mylk-count="3">
+              <div class="product-copy">
+                <h3>Box of 6</h3>
+                <p>Inclusions per box:</p>
+                <ul class="bundle-inclusions">
+                  <li>3 Premium Muffins</li>
+                  <li>3 Classic Muffins</li>
+                  <li>3 Any flavor of Mylk</li>
+                </ul>
+                <span>₱549</span>
+              </div>
+            </article>
+            <article class="product-card bundle-card" data-name="Box of 2 Muffins Only" data-price="₱132" data-desc="Includes 1 premium muffin and 1 classic muffin." data-category="bundles" data-bundle="true" data-premium-count="1" data-classic-count="1" data-mylk-count="0">
+              <div class="product-copy">
+                <h3>Box of 2</h3>
+                <p>Inclusions per box:</p>
+                <ul class="bundle-inclusions">
+                  <li>1 Premium Muffin</li>
+                  <li>1 Classic Muffin</li>
+                </ul>
+                <span>₱132</span>
+              </div>
+            </article>
+            <article class="product-card bundle-card" data-name="Box of 4 Muffins Only" data-price="₱259" data-desc="Includes 2 premium muffins and 2 classic muffins." data-category="bundles" data-bundle="true" data-premium-count="2" data-classic-count="2" data-mylk-count="0">
+              <div class="product-copy">
+                <h3>Box of 4</h3>
+                <p>Inclusions per box:</p>
+                <ul class="bundle-inclusions">
+                  <li>2 Premium Muffins</li>
+                  <li>2 Classic Muffins</li>
+                </ul>
+                <span>₱259</span>
+              </div>
+            </article>
+            <article class="product-card bundle-card" data-name="Box of 6 Muffins Only" data-price="₱379" data-desc="Includes 3 premium muffins and 3 classic muffins." data-category="bundles" data-bundle="true" data-premium-count="3" data-classic-count="3" data-mylk-count="0">
+              <div class="product-copy">
+                <h3>Box of 6</h3>
+                <p>Inclusions per box:</p>
+                <ul class="bundle-inclusions">
+                  <li>3 Premium Muffins</li>
+                  <li>3 Classic Muffins</li>
+                </ul>
+                <span>₱379</span>
+              </div>
+            </article>
+              </div>
+            </section>
+            <p class="menu-empty hidden" id="menuEmptyState">No menu items match this price filter.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="feedback-section" id="feedback">
+        <div class="section-header">
+          <span>Feedback</span>
+          <h2>Tell us what you love and what you want next.</h2>
+        </div>
+        <form class="feedback-form" id="feedbackForm">
+          <div class="field-group">
+            <label>Name <span>(Optional)</span></label>
+            <input type="text" placeholder="Your name" />
+          </div>
+          <div class="field-group">
+            <label>Personal Info</label>
+            <input type="text" placeholder="Phone or email" required />
+          </div>
+          <div class="field-group">
+            <label>Comment</label>
+            <textarea rows="5" placeholder="Share your thoughts" required></textarea>
+          </div>
+          <button class="btn btn-primary" type="submit">Send Feedback</button>
+        </form>
+      </section>
+
+      <section class="about-section" id="about">
+        <div class="section-header">
+          <span>About Us</span>
+          <h2>Built around coconut-inspired baking and thoughtful zero-waste choices.</h2>
+        </div>
+        <div class="about-grid">
+          <article class="about-card">
+            <div class="about-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                <path d="M8 10h.01M12 10h.01M16 10h.01"></path>
+              </svg>
+            </div>
+            <h3>Our Story</h3>
+            <p>"Muffinut" blends muffin and coconut into a premium bakery concept focused on modern taste, eco-conscious practices, and everyday luxury.</p>
+          </article>
+          <article class="about-card">
+            <div class="about-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                <circle cx="12" cy="12" r="3"></circle>
+              </svg>
+            </div>
+            <h3>Vision</h3>
+            <p>To become the trusted choice for baked goods with innovative flavors, approachable pricing, and a greener approach to packaging.</p>
+          </article>
+          <article class="about-card">
+            <div class="about-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"></path>
+              </svg>
+            </div>
+            <h3>Mission</h3>
+            <p>To craft delicious products with care, combining modern creativity, premium ingredients, and the warmth of a small bakery.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact">
+        <div class="contact-grid">
+          <div class="contact-card">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+            </div>
+            <p class="panel-label">Order Direct</p>
+            <h3>0956 965 5359</h3>
+          </div>
+          <div class="contact-card socials">
+            <p class="panel-label">Follow Us</p>
+            <div class="social-links">
+              <a href="https://www.facebook.com/share/1KJzybhwww/" target="_blank" rel="noopener noreferrer" title="Facebook">
+                <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                </svg>
+              </a>
+              <a href="https://www.instagram.com/MUFF.INUT" target="_blank" rel="noopener noreferrer" title="Instagram">
+                <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                </svg>
+              </a>
+              <a href="https://www.tiktok.com/@muffinut2" target="_blank" rel="noopener noreferrer" title="TikTok">
+                <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M19.498 3.094c1.356 0 2.463-1.107 2.463-2.463S20.854 0 19.498 0s-2.463 1.107-2.463 2.463 1.107 2.463 2.463 2.463m4.884 3.823c-.165-2.357-2.291-4.172-4.707-4.172a4.582 4.582 0 0 0-3.423 1.543V.754h-3.649v15.387c0 1.295-1.049 2.344-2.344 2.344s-2.343-1.049-2.343-2.344 1.048-2.343 2.343-2.343c.196 0 .388.024.576.071V9.586a5.96 5.96 0 0 0-.576-.029c-3.375 0-6.123 2.748-6.123 6.123s2.748 6.123 6.123 6.123c3.375 0 6.123-2.748 6.123-6.123v-3.154a7.632 7.632 0 0 0 4.63 1.542c3.22 0 5.887-2.463 6.05-5.517h-3.823z"/>
+                </svg>
+              </a>
+              <a href="mailto:muffinut18@gmail.com" title="Email">
+                <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="find-section" id="find-us">
+        <div class="section-header">
+          <span>Find Us</span>
+          <h2>Drop by our Valenzuela location for fresh muffins and warm hospitality.</h2>
+        </div>
+        <div class="find-card">
+          <div class="find-copy">
+            <h3>Address</h3>
+            <p>Maysan Road, Valenzuela City</p>
+            <div class="find-image">
+              <img src="PRODUCT/place.jpg" alt="Muffinut Location" />
+            </div>
+          </div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3860.6485556789756!2d120.97159!3d14.76167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b1234567890d%3A0x1234567890abcdef!2sMaysan%20Rd%2C%20Valenzuela%2C%201600%20Metro%20Manila!5e0!3m2!1sen!2sph!4v1234567890123" width="100%" height="400" style="border:0; border-radius: 28px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2026 Muffinut. Premium coconut-inspired bakery, made with care.</p>
+    </footer>
+  </div>
+
+  <div class="modal-backdrop hidden" id="productModal">
+    <div class="modal-panel">
+      <button class="close-button" id="closeProductModal">✕</button>
+      <div class="modal-content">
+        <div class="modal-header">
+          <p class="panel-label">Product Details</p>
+          <div class="modal-title-section">
+            <div>
+              <h2 id="modalTitle">Product Name</h2>
+              <p class="modal-price" id="modalPrice">₱0</p>
+            </div>
+            <div class="modal-image-small">
+              <img id="modalProductImage" src="" alt="Product" />
+            </div>
+          </div>
+        </div>
+        <button class="btn btn-secondary" id="toggleDetailsButton">View More Details</button>
+        <div class="modal-description hidden" id="modalDescriptionWrapper">
+          <p id="modalDescription">Full description goes here.</p>
+        </div>
+        <div class="bundle-choices hidden" id="bundleChoicesWrapper"></div>
+        <button class="btn btn-primary" id="addToCart"><span class="btn-icon">🛒</span>Add to Cart</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="cart-backdrop hidden" id="cartBackdrop">
+    <div class="cart-panel">
+      <button class="close-button" id="closeCart">✕</button>
+      <div class="cart-header">
+        <p class="panel-label">Your Order</p>
+        <h2>Cart Summary</h2>
+      </div>
+      <div class="cart-items" id="cartItems">
+        <p class="empty-cart">Your cart is empty. Add something delicious!</p>
+      </div>
+      <div class="cart-controls">
+        <div class="promo-row">
+          <label for="promoInput">Promo Code</label>
+          <div class="promo-input-group">
+            <input id="promoInput" type="text" placeholder="Enter code, e.g. MUFFI10" />
+            <button id="applyPromoButton" class="btn btn-secondary">Apply</button>
+          </div>
+          <p class="promo-message" id="promoMessage">Use MUFFI10 for 10% off.</p>
+        </div>
+        <div class="payment-row">
+          <label for="paymentSelect">Payment Method</label>
+          <select id="paymentSelect">
+            <option value="Cash on Delivery">Cash on Delivery</option>
+            <option value="Gcash">Gcash</option>
+            <option value="PayMaya">PayMaya</option>
+            <option value="Credit / Debit Card">Credit / Debit Card</option>
+          </select>
+        </div>
+      </div>
+      <div class="cart-summary">
+        <div class="summary-row"><span>Subtotal</span><span id="cartSubtotal">₱0</span></div>
+        <div class="summary-row"><span>Discount</span><span id="cartDiscount">₱0</span></div>
+        <div class="summary-row total"><span>Total</span><span id="cartTotal">₱0</span></div>
+      </div>
+      <button class="btn btn-primary full-width" id="checkoutButton">Checkout Now</button>
+    </div>
+  </div>
+
+  <div class="toast-notification hidden" id="toastNotification">
+    <div class="toast-content">
+      <svg class="toast-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+        <polyline points="22 4 12 14.01 9 11.01"></polyline>
+      </svg>
+      <div class="toast-text">
+        <p class="toast-title" id="toastTitle">Success!</p>
+        <p class="toast-message" id="toastMessage">Item added to cart</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
